@@ -1,10 +1,21 @@
+<table>
+  <tr>
+    <td width="70%">
+      <h1>Ciao, sono Mario 👋</h1>
+      <p>Consulente · AI · Automazione · Strategia</p>
+    </td>
+    <td width="30%">
+      <img
+        width="220"
+        src="./assets/ascii-animation.gif"
+        alt="Animated ASCII avatar"
+      />
+    </td>
+  </tr>
+</table>
+
 <div align="center">
-<img
-  align="right"
-  width="320"
-  src="./assets/ascii-animation.gif"
-  alt="Animated ASCII terminal"
-/>
+
 
 
 # Ciao, sono Frank! 👋
