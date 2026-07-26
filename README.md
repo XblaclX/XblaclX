@@ -1,3 +1,4 @@
+<div align="center">
 <img
   align="right"
   width="320"
@@ -5,7 +6,6 @@
   alt="Animated ASCII terminal"
 />
 
-<div align="center">
 
 # Ciao, sono Frank! 👋
 
