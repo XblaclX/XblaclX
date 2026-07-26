@@ -1,6 +1,6 @@
 <div align="center">
 
-# Ciao, sono TUO_NOME 👋
+# Ciao, sono Frank! 👋
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&center=true&vCenter=true&width=650&lines=Consulente+digitale;Automazione+e+Intelligenza+Artificiale;Tecnologia%2C+processi+e+strategia;Sempre+alla+ricerca+di+soluzioni+migliori)](https://github.com/DenverCoder1/readme-typing-svg)
 
