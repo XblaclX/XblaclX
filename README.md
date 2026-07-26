@@ -1,3 +1,10 @@
+<img
+  align="right"
+  width="320"
+  src="./assets/ascii-animation.gif"
+  alt="Animated ASCII terminal"
+/>
+
 <div align="center">
 
 # Ciao, sono Frank! 👋
