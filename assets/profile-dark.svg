@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="650" viewBox="0 0 1180 650">
+  <defs>
+    <radialGradient id="bg" cx="28%" cy="18%" r="95%">
+      <stop offset="0" stop-color="#07351b"/>
+      <stop offset="0.48" stop-color="#02180c"/>
+      <stop offset="1" stop-color="#020805"/>
+    </radialGradient>
+    <linearGradient id="matrix" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39ff88"><animate attributeName="stop-color" values="#39ff88;#00ff66;#7cffb2;#39ff88" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="0.55" stop-color="#00ff66"><animate attributeName="stop-color" values="#00ff66;#00c853;#39ff88;#00ff66" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#00c853"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ff66" stop-opacity="0"/>
+      <stop offset="0.48" stop-color="#39ff88" stop-opacity="0.05"/>
+      <stop offset="0.5" stop-color="#baffce" stop-opacity="0.7"/>
+      <stop offset="0.52" stop-color="#39ff88" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#00ff66" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#39ff88" opacity="0.035"/></pattern>
+    <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#00ff66" stroke-width="0.55" opacity="0.1"/></pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+    <style>
+      .mono{font-family:'Courier New',Consolas,monospace}.label{font-size:13px;fill:#5faf7a;letter-spacing:1.1px}.title{font-size:12px;fill:#39ff88;letter-spacing:2.2px;font-weight:700}.key{font-size:15px;fill:#00ff66;font-weight:700}.val{font-size:15px;fill:#d5ffe2}.muted{font-size:12px;fill:#5faf7a}.tiny{font-size:10px;fill:#00c853;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect width="1180" height="650" rx="18" fill="url(#bg)"/>
+  <rect width="1180" height="650" rx="18" fill="url(#scanlines)"/>
+  <rect x="1" y="1" width="1178" height="648" rx="18" fill="none" stroke="url(#matrix)" stroke-width="2" opacity="0.72"><animate attributeName="opacity" values="0.42;0.92;0.42" dur="3.4s" repeatCount="indefinite"/></rect>
+  <g id="titlebar">
+    <rect x="3" y="3" width="1174" height="40" rx="16" fill="#03150b" fill-opacity="0.92"/>
+    <circle cx="25" cy="22" r="5" fill="#ff5f56"/><circle cx="44" cy="22" r="5" fill="#ffbd2e"/><circle cx="63" cy="22" r="5" fill="#27c93f"/>
+    <text x="590" y="27" text-anchor="middle" class="mono label">xblaclx@system ~ % whoami --verbose</text>
+    <circle cx="1094" cy="22" r="4" fill="#00ff66" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+    <text x="1105" y="26" class="mono tiny">ONLINE</text>
+  </g>
+  <g transform="translate(0,46)">
+    <rect x="18" y="24" width="490" height="542" rx="14" fill="#020805" fill-opacity="0.5" stroke="#00ff66" stroke-opacity="0.25"/>
+    <rect x="522" y="24" width="640" height="542" rx="14" fill="#020805" fill-opacity="0.5" stroke="#00ff66" stroke-opacity="0.25"/>
+    <text x="34" y="17" class="mono title">IDENTITY.MAP</text>
+    <text x="538" y="17" class="mono title">SYSTEM.IDENTITY</text>
+    <g transform="translate(36,52)">
+      <rect width="454" height="475" rx="12" fill="url(#microgrid)" opacity="0.75"/>
+      <ellipse cx="227" cy="225" rx="172" ry="172" fill="#00ff66" opacity="0.028" filter="url(#soft)"><animate attributeName="opacity" values=".018;.06;.018" dur="4.5s" repeatCount="indefinite"/></ellipse>
+      <circle cx="227" cy="225" r="151" fill="none" stroke="#00ff66" stroke-width="1" stroke-dasharray="4 9" opacity="0.45"><animateTransform attributeName="transform" type="rotate" from="0 227 225" to="360 227 225" dur="42s" repeatCount="indefinite"/></circle>
+      <circle cx="227" cy="225" r="118" fill="none" stroke="#39ff88" stroke-width="1.2" stroke-dasharray="1 12" opacity="0.42"><animateTransform attributeName="transform" type="rotate" from="360 227 225" to="0 227 225" dur="24s" repeatCount="indefinite"/></circle>
+      <path d="M129 116L325 334M325 116L129 334" stroke="url(#matrix)" stroke-width="13" stroke-linecap="round" opacity="0.88" filter="url(#glow)"/>
+      <path d="M147 116L227 42L307 116M147 334L227 408L307 334" fill="none" stroke="#00c853" stroke-width="1.2" opacity="0.55"/>
+      <g fill="#39ff88"><circle cx="129" cy="116" r="4"><animate attributeName="r" values="3;6;3" dur="2.2s" repeatCount="indefinite"/></circle><circle cx="325" cy="116" r="4"><animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite"/></circle><circle cx="129" cy="334" r="4"><animate attributeName="r" values="3;6;3" dur="2.5s" repeatCount="indefinite"/></circle><circle cx="325" cy="334" r="4"><animate attributeName="r" values="4;7;4" dur="3s" repeatCount="indefinite"/></circle></g>
+      <text x="227" y="447" text-anchor="middle" class="mono key" style="font-size:19px">XBLACLX</text>
+      <text x="227" y="466" text-anchor="middle" class="mono muted">HUMAN OPERATOR // MATRIX NODE 157694192</text>
+    </g>
+    <g class="mono">
+      <text x="545" y="108" class="key">Subject<tspan class="muted"> ................. </tspan><tspan class="val">XblaclX</tspan></text>
+      <text x="545" y="136" class="key">Profile<tspan class="muted"> .... </tspan><tspan class="val">Economics &amp; Finance × AI × Software</tspan></text>
+      <text x="545" y="164" class="key">Focus<tspan class="muted"> ...... </tspan><tspan class="val">AI Engineering · Cloud · DevOps</tspan></text>
+      <text x="545" y="192" class="key">Certification<tspan class="muted"> .............. </tspan><tspan class="val">OCF</tspan></text>
+      <text x="545" y="220" class="key">Status<tspan class="muted"> ..... </tspan><tspan class="val">Building · Automating · Shipping</tspan></text>
+      <text x="545" y="248" class="key">Mindset<tspan class="muted"> .... </tspan><tspan class="val">Finance logic → engineered systems</tspan></text>
+      <text x="545" y="285" class="title">CORE.STACK</text>
+      <text x="545" y="316" class="key">Lang<tspan class="muted"> ....... </tspan><tspan class="val">Python · JavaScript · Bash</tspan></text>
+      <text x="545" y="344" class="key">AI<tspan class="muted"> ......... </tspan><tspan class="val">LLMs · Agents · RAG · Realtime AI</tspan></text>
+      <text x="545" y="372" class="key">Backend<tspan class="muted"> ... </tspan><tspan class="val">FastAPI · Node.js · REST</tspan></text>
+      <text x="545" y="400" class="key">Frontend<tspan class="muted"> .. </tspan><tspan class="val">React · Flutter</tspan></text>
+      <text x="545" y="428" class="key">Infra<tspan class="muted"> ..... </tspan><tspan class="val">Linux · Docker · Git · CI/CD</tspan></text>
+      <text x="545" y="456" class="key">Cloud<tspan class="muted"> ..... </tspan><tspan class="val">AWS · Infrastructure as Code</tspan></text>
+      <text x="545" y="493" class="title">CURRENT.SCOPE</text>
+      <text x="545" y="524" class="key">Projects<tspan class="muted"> ... </tspan><tspan class="val">EVA · BESG · AI OS · Realtime Voice</tspan></text>
+      <text x="545" y="552" class="key">GitHub<tspan class="muted"> ..... </tspan><tspan class="val">github.com/XblaclX</tspan></text>
+    </g>
+  </g>
+  <rect x="0" y="-80" width="1180" height="80" fill="url(#scan)" opacity="0.68" style="mix-blend-mode:screen"><animateTransform attributeName="transform" type="translate" from="0 -80" to="0 790" dur="4.6s" repeatCount="indefinite"/></rect>
+</svg>
